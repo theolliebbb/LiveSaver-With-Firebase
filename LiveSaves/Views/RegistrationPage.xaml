@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="LiveSaves.Views.RegistrationPage"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Register Account"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+                <yummy:PancakeView BackgroundGradientStartPoint="0,0" BackgroundGradientEndPoint="0,1">
+   <yummy:PancakeView.BackgroundGradientStops>
+      <yummy:GradientStopCollection>
+         <yummy:GradientStop Color="Black" Offset=".7" />
+         
+         <yummy:GradientStop Color="Maroon" Offset="1" />
+      </yummy:GradientStopCollection>
+   </yummy:PancakeView.BackgroundGradientStops>
+<StackLayout VerticalOptions="CenterAndExpand" Padding="5">  
+      <StackLayout Orientation="Horizontal">  
+          
+      </StackLayout>
+    <Label Text="Event Lister Registration Page" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Fonty" TextColor="GhostWhite"/>
+            <Label/>
+            <Label/>
+            <Label/>
+            <Label/>
+     
+      <Entry x:Name="Email" PlaceholderColor="Gray" TextColor="Black" Placeholder="Email"></Entry>
+      <Label x:Name="NoEmail" FontFamily="Fonty"  TextColor="Red" Text="Please Input Email" IsVisible="False"/>
+      <Entry x:Name="Pass" PlaceholderColor="Gray"  TextColor="Black" Placeholder="Password" IsPassword="True"></Entry>
+      <Label x:Name="NoPass" FontFamily="Fonty"  TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
+      <Label x:Name="BadPass" FontFamily="Fonty"  TextColor="Red" Text="Please Use both Upper and Lowercase Letters" IsVisible="False"/>
+      <Entry x:Name="Pass2" PlaceholderColor="Gray" TextColor="Black" Placeholder="Confirm Password" IsPassword="True"></Entry>
+      <Label x:Name="NoPass2" FontFamily="Fonty"  TextColor="Red" Text="Please Input User Name" IsVisible="False"/>
+    <yummy:PancakeView>
+    <yummy:PancakeView.Border>
+        <yummy:Border Color="White" Thickness="1" />
+    </yummy:PancakeView.Border>
+      <Button Text="Sign Up" FontFamily="Fonty" BackgroundColor="Black" TextColor="GhostWhite" Clicked="Register_Clicked"></Button>
+        </yummy:PancakeView>
+        <yummy:PancakeView>
+   <yummy:PancakeView.Border>
+        <yummy:Border Color="White" Thickness="1" />
+    </yummy:PancakeView.Border>
+      <Button Clicked="Button_Clicked" FontFamily="Fonty" BackgroundColor="Black" TextColor="GhostWhite" Text="Already have an account?" ></Button>
+            </yummy:PancakeView>
+  </StackLayout>
+                    </yummy:PancakeView>
+    </ContentPage.Content>
+</ContentPage>
